@@ -179,6 +179,11 @@ function App() {
               <p>
                 During my internship at PlayGG, I built a cafe management dashboard using Next.js 15 (TypeScript) and NestJS with real-time bookings, inventory, and payments. Designed a modular booking system for 20+ gaming categories with automated pricing and extensions, and developed a food ordering system with live cart sync using MySQL & TypeORM. Enhanced user experience through responsive UI (Tailwind CSS, Chakra UI, React Query) and optimized operations with split payments, device tracking, and reporting.
               </p>
+              <div className="experience-links">
+                <a href="https://www.playcafe.in" target="_blank" rel="noopener noreferrer" className="experience-link">
+                  <i className="fas fa-external-link-alt"></i> PlayCafe Dashboard
+                </a>
+              </div>
               <div className="skills-tags">
                 <span className="skill-tag">Next.js 15</span>
                 <span className="skill-tag">TypeScript</span>
