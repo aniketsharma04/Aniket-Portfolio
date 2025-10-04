@@ -80,19 +80,19 @@ function App() {
             </a>
           </div>
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/" target="_blank" rel="noopener noreferrer" data-tooltip="LinkedIn">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/aniketsharma054" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://www.instagram.com/aniketsharma054" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.codechef.com/users/anikets_iiitn" target="_blank" rel="noopener noreferrer">
+            </a> */}
+            <a href="https://www.codechef.com/users/anikets_iiitn" target="_blank" rel="noopener noreferrer" data-tooltip="CodeChef">
               <i className="fas fa-code"></i>
             </a>
-            <a href="https://www.geeksforgeeks.org/user/aniketshaul0x/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.geeksforgeeks.org/user/aniketshaul0x/" target="_blank" rel="noopener noreferrer" data-tooltip="GeeksforGeeks">
               <i className="fas fa-laptop-code"></i>
             </a>
-            <a href="https://github.com/aniketsharma04" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/aniketsharma04" target="_blank" rel="noopener noreferrer" data-tooltip="GitHub">
               <i className="fab fa-github"></i>
             </a>
           </div>
