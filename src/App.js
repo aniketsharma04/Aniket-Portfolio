@@ -120,7 +120,7 @@ function App() {
               <i className="fab fa-linkedin"></i> Connect on LinkedIn
             </a>
             <a 
-              href="https://drive.google.com/drive/folders/1mrtmeTs044I9j8TxFyz1EArmsBtEharn?usp=sharing" 
+              href="https://drive.google.com/file/d/1z-UUZyA53syTWqZGleSedyMRpBA_reY6/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-primary"
@@ -144,7 +144,7 @@ function App() {
               What sets me apart is my solid foundation in software engineering principles, paired with a problem-solving mindset that's been sharpened by solving 400+ coding problems across various platforms and active competitive programming. Whether it's backend logic or pixel-perfect frontend interfaces, I believe in clean, maintainable code and always push myself to learn and implement the best practices. I'm eager to take on new challenges and create meaningful, impactful solutions as a full stack developer.
             </p>
             <a 
-              href="https://drive.google.com/drive/folders/1mrtmeTs044I9j8TxFyz1EArmsBtEharn?usp=sharing" 
+              href="https://drive.google.com/file/d/1z-UUZyA53syTWqZGleSedyMRpBA_reY6/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-primary"
@@ -161,6 +161,39 @@ function App() {
           <h2 className="section-title gradient-text">My Experience</h2>
           <div className="section-divider"></div>
           
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-icon">
+                <i className="fas fa-code"></i>
+              </div>
+              <div className="experience-info">
+                <h3>Full Stack Developer Intern</h3>
+                <h4>PlayGG</h4>
+                <div className="experience-badge">
+                  <span className="badge">Remote Internship</span>
+                </div>
+                <p className="experience-date">July 2025 - Current</p>
+              </div>
+            </div>
+            <div className="experience-description">
+              <p>
+                During my internship at PlayGG, I built a cafe management dashboard using Next.js 15 (TypeScript) and NestJS with real-time bookings, inventory, and payments. Designed a modular booking system for 20+ gaming categories with automated pricing and extensions, and developed a food ordering system with live cart sync using MySQL & TypeORM. Enhanced user experience through responsive UI (Tailwind CSS, Chakra UI, React Query) and optimized operations with split payments, device tracking, and reporting.
+              </p>
+              <div className="skills-tags">
+                <span className="skill-tag">Next.js 15</span>
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">NestJS</span>
+                <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">TypeORM</span>
+                <span className="skill-tag">Tailwind CSS</span>
+                {/* <span className="skill-tag">Chakra UI</span> */}
+                <span className="skill-tag">React Query</span>
+                <span className="skill-tag">Real-time Systems</span>
+                <span className="skill-tag">Payment Processing</span>
+              </div>
+            </div>
+          </div>
+
           <div className="experience-card">
             <div className="experience-header">
               <div className="experience-icon">
@@ -231,7 +264,7 @@ function App() {
               <div className="skills-tags">
                 <span className="skill-tag">C++ Programming</span>
                 <span className="skill-tag">Data Structures & Algorithms</span>
-                <span className="skill-tag">Problem Solving</span>
+                {/* <span className="skill-tag">Problem Solving</span> */}
                 <span className="skill-tag">Competitive Programming</span>
                 <span className="skill-tag">Mathematical Thinking</span>
               </div>
