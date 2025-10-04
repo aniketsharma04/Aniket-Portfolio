@@ -177,7 +177,7 @@ function App() {
             </div>
             <div className="experience-description">
               <p>
-                During my internship at PlayGG, I built a cafe management dashboard using Next.js 15 (TypeScript) and NestJS with real-time bookings, inventory, and payments. Designed a modular booking system for 20+ gaming categories with automated pricing and extensions, and developed a food ordering system with live cart sync using MySQL & TypeORM. Enhanced user experience through responsive UI (Tailwind CSS, Chakra UI, React Query) and optimized operations with split payments, device tracking, and reporting.
+                At PlayGG, I developed a cafe management dashboard using Next.js 15 (TypeScript) and NestJS, enabling real-time bookings, inventory, and payments. Built a booking system for 20+ gaming categories with automated pricing, plus a food ordering workflow with live cart sync using MySQL & TypeORM. Enhanced UX with responsive UI (Tailwind, Chakra, React Query) and improved operations through split payments, device tracking, and reporting.
               </p>
               <div className="experience-links">
                 <a href="https://www.playcafe.in" target="_blank" rel="noopener noreferrer" className="experience-link">
@@ -189,12 +189,12 @@ function App() {
                 <span className="skill-tag">TypeScript</span>
                 <span className="skill-tag">NestJS</span>
                 <span className="skill-tag">MySQL</span>
-                <span className="skill-tag">TypeORM</span>
+                {/* <span className="skill-tag">TypeORM</span> */}
                 <span className="skill-tag">Tailwind CSS</span>
                 {/* <span className="skill-tag">Chakra UI</span> */}
                 <span className="skill-tag">React Query</span>
                 <span className="skill-tag">Real-time Systems</span>
-                <span className="skill-tag">Payment Processing</span>
+                {/* <span className="skill-tag">Payment Processing</span> */}
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@ function App() {
                 <span className="tech-tag">MongoDB</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/aniketsharma04" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/aniketsharma04/ConnectApp" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 {/* <a href="#" target="_blank" rel="noopener noreferrer">
@@ -359,7 +359,7 @@ function App() {
                 <span className="tech-tag">Express.js</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/aniketsharma04" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/aniketsharma04/Task-Manager" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 {/* <a href="#" target="_blank" rel="noopener noreferrer">
@@ -380,12 +380,12 @@ function App() {
                 <span className="tech-tag">Responsive Design</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/aniketsharma04" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/aniketsharma04/Aniket-Portfolio" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
-                {/* <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://portfolio-main-86tq.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-external-link-alt"></i>
-                </a> */}
+                </a>
               </div>
             </div>
           </div>
