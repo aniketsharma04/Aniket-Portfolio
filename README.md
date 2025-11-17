@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+Aniket Portfolio 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive personal portfolio website built using React, showcasing my projects, experience, skills, and achievements.
+This portfolio is designed to be clean, fast, and visually appealing — giving visitors a quick overview of who I am and what I do.
 
-## Available Scripts
+🌐 Live Portfolio: https://portfolio-main-86tq.vercel.app/
 
-In the project directory, you can run:
+📦 GitHub Repository: https://github.com/aniketsharma04/Aniket-Portfolio
 
-### `npm start`
+📌 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⚡ Fast and responsive UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🎨 Modern and minimal design
 
-### `npm test`
+📱 Fully mobile-responsive
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🧩 Modular and reusable components
 
-### `npm run build`
+🌙 Light & clean theme
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔗 Section for skills, projects, experience, contact, and more
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🚀 Hosted live on Vercel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🛠️ Tech Stack
 
-### `npm run eject`
+Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+JavaScript (ES6+)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tailwind CSS / CSS (whichever applies)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Framer Motion (if animations used)
 
-## Learn More
+Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Vercel
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📁 Project Structure
+Aniket-Portfolio/
+│
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable components
+│   ├── pages/           # Main sections/pages
+│   ├── assets/          # Images, icons, etc.
+│   ├── styles/          # Global styles
+│   ├── App.js           # App entry
+│   └── index.js         # React DOM entry point
+│
+├── package.json
+├── README.md
+└── vercel.json          # (if configured)
 
-### Code Splitting
+🚀 Getting Started (Run Locally)
+1. Clone the repository
+git clone https://github.com/aniketsharma04/Aniket-Portfolio.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Navigate into the project directory
+cd Aniket-Portfolio
 
-### Analyzing the Bundle Size
+3. Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Start development server
+npm start
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Your app will run locally at:
+👉 http://localhost:3000
 
-### Advanced Configuration
+📦 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This portfolio is deployed using Vercel.
 
-### Deployment
+To deploy:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm run build
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Then upload the build/ folder to Vercel OR directly connect GitHub repo to Vercel for auto-deploy.
+
+🖼️ Screenshots
+
+(Add screenshots here if you want — homepage, projects section, etc.)
+
+📬 Contact
+
+If you’d like to collaborate or have a question:
+
+Name: Aniket Sharma
+Email: (add your email here)
+LinkedIn: (add your profile link here)
+GitHub: https://github.com/aniketsharma04
+
+📘 Future Improvements
+
+Add dark mode
+
+Add blog section
+
+Add animations to components
+
+Add backend for contact form submissions
+
+⭐ Show Your Support
+
+If you found this project useful, please give the repo a ⭐ on GitHub — it helps more than you think!
