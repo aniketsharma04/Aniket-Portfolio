@@ -296,7 +296,7 @@ function App() {
                 <span className="tech-tag">Express.js</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/aniketsharma04" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/aniketsharma04/Customer-Service-Platform" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 {/* <a href="#" target="_blank" rel="noopener noreferrer">
@@ -338,7 +338,7 @@ function App() {
                 <span className="tech-tag">Socket.io</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/aniketsharma04" target="_blank" rel="noopener noreferrer">
+                <a href="hhttps://github.com/aniketsharma04/ChatAPP" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 {/* <a href="#" target="_blank" rel="noopener noreferrer">
