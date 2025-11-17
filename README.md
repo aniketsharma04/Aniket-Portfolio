@@ -3,9 +3,13 @@ Aniket Portfolio 🚀
 A modern and responsive personal portfolio website built using React, showcasing my projects, experience, skills, and achievements.
 This portfolio is designed to be clean, fast, and visually appealing — giving visitors a quick overview of who I am and what I do.
 
+---
+
 🌐 Live Portfolio: https://portfolio-main-86tq.vercel.app/
 
 📦 GitHub Repository: https://github.com/aniketsharma04/Aniket-Portfolio
+
+---
 
 📌 Features
 
@@ -23,6 +27,8 @@ This portfolio is designed to be clean, fast, and visually appealing — giving 
 
 🚀 Hosted live on Vercel
 
+---
+
 🛠️ Tech Stack
 
 Frontend
@@ -39,6 +45,8 @@ Deployment
 
 Vercel
 
+---
+
 📁 Project Structure
 Aniket-Portfolio/
 │
@@ -54,6 +62,8 @@ Aniket-Portfolio/
 ├── package.json
 ├── README.md
 └── vercel.json          # (if configured)
+
+---
 
 🚀 Getting Started (Run Locally)
 1. Clone the repository
@@ -72,6 +82,8 @@ npm start
 Your app will run locally at:
 👉 http://localhost:3000
 
+---
+
 📦 Deployment
 
 This portfolio is deployed using Vercel.
@@ -83,9 +95,13 @@ npm run build
 
 Then upload the build/ folder to Vercel OR directly connect GitHub repo to Vercel for auto-deploy.
 
+---
+
 🖼️ Screenshots
 
 (Add screenshots here if you want — homepage, projects section, etc.)
+
+---
 
 📬 Contact
 
@@ -96,6 +112,8 @@ Email: (add your email here)
 LinkedIn: (add your profile link here)
 GitHub: https://github.com/aniketsharma04
 
+---
+
 📘 Future Improvements
 
 Add dark mode
@@ -105,6 +123,8 @@ Add blog section
 Add animations to components
 
 Add backend for contact form submissions
+
+---
 
 ⭐ Show Your Support
 
