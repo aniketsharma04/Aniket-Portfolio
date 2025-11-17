@@ -112,20 +112,12 @@ Email: (add your email here)
 LinkedIn: (add your profile link here)
 GitHub: https://github.com/aniketsharma04
 
----
-
-📘 Future Improvements
-
-Add dark mode
-
-Add blog section
-
-Add animations to components
-
-Add backend for contact form submissions
 
 ---
 
 ⭐ Show Your Support
 
 If you found this project useful, please give the repo a ⭐ on GitHub — it helps more than you think!
+📌 LinkedIn: https://www.linkedin.com/in/aniket-sharma-07ba6617b/
+
+Contact: aniketsharma.ani04@gmail.com
