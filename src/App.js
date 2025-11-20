@@ -120,7 +120,7 @@ function App() {
               <i className="fab fa-linkedin"></i> Connect on LinkedIn
             </a>
             <a 
-              href="https://drive.google.com/file/d/1z-UUZyA53syTWqZGleSedyMRpBA_reY6/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-primary"
@@ -144,7 +144,7 @@ function App() {
               What sets me apart is my solid foundation in software engineering principles, paired with a problem-solving mindset that's been sharpened by solving 400+ coding problems across various platforms and active competitive programming. Whether it's backend logic or pixel-perfect frontend interfaces, I believe in clean, maintainable code and always push myself to learn and implement the best practices. I'm eager to take on new challenges and create meaningful, impactful solutions as a full stack developer.
             </p>
             <a 
-              href="https://drive.google.com/file/d/1z-UUZyA53syTWqZGleSedyMRpBA_reY6/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-primary"
