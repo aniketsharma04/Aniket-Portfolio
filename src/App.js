@@ -183,6 +183,9 @@ function App() {
                 <a href="https://www.playcafe.in" target="_blank" rel="noopener noreferrer" className="experience-link">
                   <i className="fas fa-external-link-alt"></i> PlayCafe Dashboard
                 </a>
+                <a href="https://drive.google.com/file/d/1RpYhyxJNJKxD5ceDnMyCDgOLZDdQnOwS/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="experience-link">
+                  <i className="fas fa-external-link-alt"></i> Certification
+                </a>
               </div>
               <div className="skills-tags">
                 <span className="skill-tag">Next.js 15</span>
