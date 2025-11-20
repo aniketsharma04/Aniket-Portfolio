@@ -391,6 +391,30 @@ function App() {
                 </a>
               </div>
             </div>
+
+            <div className="project-card">
+              <h3>Fit AI Coach</h3>
+              <p>
+                <strong>Developing -</strong> An AI-powered fitness assistant built with Next.js that generates personalized workout and diet plans using LLMs. Features include AI-generated exercise routines with sets and reps, personalized meal plans, voice narration, AI image generation for exercises and meals, PDF export, and dark/light mode support.
+              </p>
+              <div className="project-tech">
+                <span className="tech-tag">Next.js</span>
+                <span className="tech-tag">TypeScript</span>
+                <span className="tech-tag">Tailwind CSS</span>
+                <span className="tech-tag">OpenAI/Gemini</span>
+                <span className="tech-tag">ElevenLabs</span>
+                <span className="tech-tag">Supabase</span>
+                <span className="tech-tag">AI Integration</span>
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/aniketsharma04/AI-Fitness-Project" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-github"></i>
+                </a>
+                {/* <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-external-link-alt"></i>
+                </a> */}
+              </div>
+            </div>
           </div>
         </div>
       </section>
