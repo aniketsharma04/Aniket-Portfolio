@@ -168,11 +168,11 @@ function App() {
               </div>
               <div className="experience-info">
                 <h3>Full Stack Developer Intern</h3>
-                <h4>PlayGG</h4>
-                <div className="experience-badge">
+                <h4>PlayGG, Jaipur</h4>
+                {/* <div className="experience-badge">
                   <span className="badge">Remote Internship</span>
-                </div>
-                <p className="experience-date">July 2025 - Current</p>
+                </div> */}
+                <p className="experience-date">Aug 2025 - Nov 2025</p>
               </div>
             </div>
             <div className="experience-description">
@@ -206,8 +206,8 @@ function App() {
               </div>
               <div className="experience-info">
                 <h3>C++ Programmer</h3>
-                <h4>CodSoft</h4>
-                <div className="experience-badge">
+                <h4>CodSoft, Remote</h4>
+                {/* <div className="experience-badge">
                   <a 
                     href="https://drive.google.com/drive/folders/1selpuO4G5cXY0fIO8SeokSLu71l7o7N7?usp=sharing" 
                     target="_blank" 
@@ -216,7 +216,7 @@ function App() {
                   >
                     Offer Letter and Certificate
                   </a>
-                </div>
+                </div> */}
                 <p className="experience-date">June 5, 2024 - July 5, 2024</p>
               </div>
             </div>
