@@ -490,6 +490,36 @@ function App() {
 
             <div className="skill-card">
               <div className="skill-icon">
+                <i className="fas fa-layer-group"></i>
+              </div>
+              <h3>Next.js</h3>
+              <p>
+                Building full-stack and hybrid apps with Next.js, leveraging server actions, app router, and incremental static regeneration for high-performance experiences with seamless deployments.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{width: '90%'}}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-file-code"></i>
+              </div>
+              <h3>TypeScript</h3>
+              <p>
+                Writing strongly typed React/Node codebases with generics, utility types, and strict compiler configurations to improve maintainability, refactoring safety, and developer productivity.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{width: '91%'}}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
                 <i className="fab fa-node-js"></i>
               </div>
               <h3>Node.js</h3>
@@ -499,6 +529,21 @@ function App() {
               <div className="skill-level">
                 <div className="skill-bar">
                   <div className="skill-progress" style={{width: '88%'}}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-project-diagram"></i>
+              </div>
+              <h3>RESTful APIs</h3>
+              <p>
+                Designing secure, well-documented REST APIs with proper versioning, validation, and monitoring, plus integrations with Postman, Swagger, and caching to keep services scalable and reliable.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{width: '89%'}}></div>
                 </div>
               </div>
             </div>
