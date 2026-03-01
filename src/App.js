@@ -36,45 +36,45 @@ function App() {
         <div className="nav-container">
           <div className="nav-logo">Aniket Sharma</div>
           <div className="nav-menu">
-            <a 
-              href="#home" 
+            <a
+              href="#home"
               className={activeSection === 'home' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('home');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
             >
               Home
             </a>
-            <a 
-              href="#about" 
+            <a
+              href="#about"
               className={activeSection === 'about' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('about');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
             >
               About
             </a>
-            <a 
-              href="#experience" 
+            <a
+              href="#experience"
               className={activeSection === 'experience' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('experience');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}
             >
               Experience
             </a>
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className={activeSection === 'projects' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('projects');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
             >
               Projects
             </a>
-            <a 
-              href="#skills" 
+            <a
+              href="#skills"
               className={activeSection === 'skills' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('skills');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}
             >
               Skills
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className={activeSection === 'contact' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('contact');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
             >
               Contact
             </a>
@@ -111,17 +111,17 @@ function App() {
             I specialize in building fast, modern, and scalable web applications using the latest technologies.
           </p>
           <div className="cta-buttons">
-            <a 
-              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
             >
               <i className="fab fa-linkedin"></i> Connect on LinkedIn
             </a>
-            <a 
-              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing" 
-              target="_blank" 
+            <a
+              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
@@ -138,14 +138,14 @@ function App() {
           <div className="section-divider"></div>
           <div className="about-content">
             <p>
-              Hello! I'm Aniket Sharma, a dedicated Full Stack Developer currently pursuing a B.Tech in Electronics and Communication Engineering at IIIT Nagpur. With a strong grasp of modern technologies including MongoDB, Express.js, React.js, and Node.js (MERN stack), I specialize in building scalable, and responsive web applications. My hands-on experience ranges from building real-time chat platforms with socket-based communication to creating secure task management systems using JWT and Redux Toolkit. I strive to ensure that performance, security, and user experience are at the core of every project I develop.
+              Hello! I'm Aniket Sharma, a dedicated Full Stack Developer currently pursuing a B.Tech in Electronics and Communication Engineering at IIIT Nagpur. With a strong grasp of modern technologies including the MERN stack, Next.js, NestJS, and TypeScript, I specialize in building scalable, responsive, and production-ready web applications. Currently, I'm working as a Software Engineering Intern at Navyug Infosolutions, where I'm building an AI-powered VS Code extension for automated test case generation using the Gemini API and LLM integration. My hands-on experience spans from building real-time chat platforms and social networking apps to cafe management dashboards with complex booking systems. I strive to ensure that performance, security, and user experience are at the core of every project I develop.
             </p>
             <p>
               What sets me apart is my solid foundation in software engineering principles, paired with a problem-solving mindset that's been sharpened by solving 400+ coding problems across various platforms and active competitive programming. Whether it's backend logic or pixel-perfect frontend interfaces, I believe in clean, maintainable code and always push myself to learn and implement the best practices. I'm eager to take on new challenges and create meaningful, impactful solutions as a full stack developer.
             </p>
-            <a 
-              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing" 
-              target="_blank" 
+            <a
+              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
@@ -160,7 +160,34 @@ function App() {
         <div className="container">
           <h2 className="section-title gradient-text">My Experience</h2>
           <div className="section-divider"></div>
-          
+
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-icon">
+                <i className="fas fa-robot"></i>
+              </div>
+              <div className="experience-info">
+                <h3>Software Engineering Intern — AI Team</h3>
+                <h4>Navyug Infosolutions, Noida</h4>
+                <p className="experience-date">Jan 2026 - Present</p>
+              </div>
+            </div>
+            <div className="experience-description">
+              <p>
+                Developing a VS Code extension for AI-driven test case generation, currently production-ready for JavaScript, Python, and Java, enabling automated unit test creation directly from user code. Designed a robust AI orchestration pipeline with language detection, prompt optimization, multi-stage test extraction, syntax validation, and retry logic for reliable test generation. Integrated Gemini API for AI-based test generation and actively working on LLM and ML model integration to enhance test coverage, reduce truncation errors, and evolve the extension into a scalable AI testing platform.
+              </p>
+              <div className="skills-tags">
+                <span className="skill-tag">VS Code Extension API</span>
+                <span className="skill-tag">Gemini API</span>
+                <span className="skill-tag">AI Orchestration</span>
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">Python</span>
+                <span className="skill-tag">Java</span>
+                <span className="skill-tag">LLM Integration</span>
+              </div>
+            </div>
+          </div>
+
           <div className="experience-card">
             <div className="experience-header">
               <div className="experience-icon">
@@ -290,7 +317,7 @@ function App() {
             <div className="project-card">
               <h3>Customer Service Platform</h3>
               <p>
-                A comprehensive customer service platform with ticket management, live chat support, and automated response systems. Features include customer data analytics, priority-based ticket routing, and real-time notifications for improved customer satisfaction.
+                A comprehensive customer service platform with ticket management, live chat support, and automated response systems. Integrated Intercom API for real-time messaging, reducing average first response time to under 1 minute. Handles 500+ concurrent support tickets with priority-based routing and real-time notifications, boosting user task completion by 40%.
               </p>
               <div className="project-tech">
                 <span className="tech-tag">React.js</span>
@@ -311,13 +338,13 @@ function App() {
             <div className="project-card">
               <h3>Connect App</h3>
               <p>
-                A social networking application that enables users to connect, share content, and communicate through posts, comments, and direct messaging. Includes user authentication, profile management, and real-time activity feeds.
+                A JWT-secure social platform with real-time CRUD via Appwrite, supporting 1000+ test users with sub-200ms latency. Enhanced API efficiency by 45% using React Query caching and optimistic updates. Features an explore feed with infinite scroll and lazy loading.
               </p>
               <div className="project-tech">
-                <span className="tech-tag">React.js</span>
-                <span className="tech-tag">Redux</span>
-                <span className="tech-tag">Node.js</span>
-                <span className="tech-tag">MongoDB</span>
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">TypeScript</span>
+                <span className="tech-tag">Appwrite</span>
+                <span className="tech-tag">Tailwind CSS</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/aniketsharma04/ConnectApp" target="_blank" rel="noopener noreferrer">
@@ -341,7 +368,7 @@ function App() {
                 <span className="tech-tag">Socket.io</span>
               </div>
               <div className="project-links">
-                <a href="hhttps://github.com/aniketsharma04/ChatAPP" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/aniketsharma04/ChatAPP" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 {/* <a href="#" target="_blank" rel="noopener noreferrer">
@@ -435,7 +462,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '90%'}}></div>
+                  <div className="skill-progress" style={{ width: '90%' }}></div>
                 </div>
               </div>
             </div>
@@ -468,7 +495,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '95%'}}></div>
+                  <div className="skill-progress" style={{ width: '95%' }}></div>
                 </div>
               </div>
             </div>
@@ -483,7 +510,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '92%'}}></div>
+                  <div className="skill-progress" style={{ width: '92%' }}></div>
                 </div>
               </div>
             </div>
@@ -498,7 +525,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '90%'}}></div>
+                  <div className="skill-progress" style={{ width: '90%' }}></div>
                 </div>
               </div>
             </div>
@@ -513,7 +540,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '91%'}}></div>
+                  <div className="skill-progress" style={{ width: '91%' }}></div>
                 </div>
               </div>
             </div>
@@ -528,7 +555,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '88%'}}></div>
+                  <div className="skill-progress" style={{ width: '88%' }}></div>
                 </div>
               </div>
             </div>
@@ -543,7 +570,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '89%'}}></div>
+                  <div className="skill-progress" style={{ width: '89%' }}></div>
                 </div>
               </div>
             </div>
@@ -558,7 +585,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '85%'}}></div>
+                  <div className="skill-progress" style={{ width: '85%' }}></div>
                 </div>
               </div>
             </div>
@@ -573,7 +600,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '87%'}}></div>
+                  <div className="skill-progress" style={{ width: '87%' }}></div>
                 </div>
               </div>
             </div>
@@ -588,7 +615,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '90%'}}></div>
+                  <div className="skill-progress" style={{ width: '90%' }}></div>
                 </div>
               </div>
             </div>
@@ -603,7 +630,127 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '89%'}}></div>
+                  <div className="skill-progress" style={{ width: '89%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fab fa-python"></i>
+              </div>
+              <h3>Python</h3>
+              <p>
+                Proficient in Python for general-purpose programming, scripting, automation, and FastAPI integration. Experience with data processing, API development, and AI/ML workflows.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '85%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-server"></i>
+              </div>
+              <h3>NestJS</h3>
+              <p>
+                Experienced in building scalable server-side applications with NestJS, leveraging dependency injection, modules, guards, and decorators for enterprise-grade backend architecture.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '86%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-vial"></i>
+              </div>
+              <h3>Jest</h3>
+              <p>
+                Skilled in unit testing and test automation with Jest, including snapshot testing, mocking, code coverage analysis, and integration testing for React and Node.js applications.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '83%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-sync-alt"></i>
+              </div>
+              <h3>React Query</h3>
+              <p>
+                Expert in server state management using React Query with caching strategies, optimistic updates, infinite queries, and background refetching for seamless data-driven UIs.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '88%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-exchange-alt"></i>
+              </div>
+              <h3>TypeORM</h3>
+              <p>
+                Proficient in TypeORM for TypeScript and JavaScript, building type-safe database layers with MySQL and PostgreSQL using migrations, relations, and query builders.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '84%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-cloud"></i>
+              </div>
+              <h3>Appwrite</h3>
+              <p>
+                Experienced with Appwrite as an open-source backend server for authentication, databases, storage, and serverless functions, enabling rapid development of web and mobile apps.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '82%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-shield-alt"></i>
+              </div>
+              <h3>Passport.js</h3>
+              <p>
+                Skilled in implementing authentication middleware with Passport.js, supporting strategies like local, OAuth, JWT, and social login for secure Node.js applications.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '85%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-puzzle-piece"></i>
+              </div>
+              <h3>VS Code Extension API</h3>
+              <p>
+                Building developer tooling and IDE extensions with the VS Code Extension API, including command palettes, webviews, language features, and AI-powered code generation tools.
+              </p>
+              <div className="skill-level">
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '80%' }}></div>
                 </div>
               </div>
             </div>
@@ -618,12 +765,12 @@ function App() {
           <div className="section-divider"></div>
           <div className="contact-content">
             <p className="contact-intro">
-              I'm always open to new opportunities—feel free to get in touch through email or social media. I look forward to connecting with you!
+              I'm always open to new opportunities, feel free to get in touch through email or social media. I look forward to connecting with you!
             </p>
             <div className="contact-info">
               <div className="contact-item">
                 <i className="fas fa-envelope"></i>
-                <a href="mailto:aniket.sharma.ani04@gmail.com" style={{color: 'inherit', textDecoration: 'none'}}>
+                <a href="mailto:aniket.sharma.ani04@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>
                   Email: aniket.sharma.ani04@gmail.com
                 </a>
               </div>
@@ -632,9 +779,9 @@ function App() {
                 <span>Phone: +91 9868459890</span>
               </div>
             </div>
-            <a 
-              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
