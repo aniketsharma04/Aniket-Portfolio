@@ -36,45 +36,45 @@ function App() {
         <div className="nav-container">
           <div className="nav-logo">Aniket Sharma</div>
           <div className="nav-menu">
-            <a 
-              href="#home" 
+            <a
+              href="#home"
               className={activeSection === 'home' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('home');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
             >
               Home
             </a>
-            <a 
-              href="#about" 
+            <a
+              href="#about"
               className={activeSection === 'about' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('about');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
             >
               About
             </a>
-            <a 
-              href="#experience" 
+            <a
+              href="#experience"
               className={activeSection === 'experience' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('experience');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}
             >
               Experience
             </a>
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className={activeSection === 'projects' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('projects');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
             >
               Projects
             </a>
-            <a 
-              href="#skills" 
+            <a
+              href="#skills"
               className={activeSection === 'skills' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('skills');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}
             >
               Skills
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className={activeSection === 'contact' ? 'active' : ''}
-              onClick={(e) => {e.preventDefault(); scrollToSection('contact');}}
+              onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
             >
               Contact
             </a>
@@ -111,17 +111,17 @@ function App() {
             I specialize in building fast, modern, and scalable web applications using the latest technologies.
           </p>
           <div className="cta-buttons">
-            <a 
-              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
             >
               <i className="fab fa-linkedin"></i> Connect on LinkedIn
             </a>
-            <a 
-              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing" 
-              target="_blank" 
+            <a
+              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
@@ -143,9 +143,9 @@ function App() {
             <p>
               What sets me apart is my solid foundation in software engineering principles, paired with a problem-solving mindset that's been sharpened by solving 400+ coding problems across various platforms and active competitive programming. Whether it's backend logic or pixel-perfect frontend interfaces, I believe in clean, maintainable code and always push myself to learn and implement the best practices. I'm eager to take on new challenges and create meaningful, impactful solutions as a full stack developer.
             </p>
-            <a 
-              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing" 
-              target="_blank" 
+            <a
+              href="https://drive.google.com/file/d/1OwY6xT8F4j2LVyxWSdj8iI5OXB5HY-E-/view?usp=sharing"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
@@ -160,7 +160,7 @@ function App() {
         <div className="container">
           <h2 className="section-title gradient-text">My Experience</h2>
           <div className="section-divider"></div>
-          
+
           <div className="experience-card">
             <div className="experience-header">
               <div className="experience-icon">
@@ -341,7 +341,7 @@ function App() {
                 <span className="tech-tag">Socket.io</span>
               </div>
               <div className="project-links">
-                <a href="hhttps://github.com/aniketsharma04/ChatAPP" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/aniketsharma04/ChatAPP" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 {/* <a href="#" target="_blank" rel="noopener noreferrer">
@@ -435,7 +435,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '90%'}}></div>
+                  <div className="skill-progress" style={{ width: '90%' }}></div>
                 </div>
               </div>
             </div>
@@ -468,7 +468,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '95%'}}></div>
+                  <div className="skill-progress" style={{ width: '95%' }}></div>
                 </div>
               </div>
             </div>
@@ -483,7 +483,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '92%'}}></div>
+                  <div className="skill-progress" style={{ width: '92%' }}></div>
                 </div>
               </div>
             </div>
@@ -498,7 +498,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '90%'}}></div>
+                  <div className="skill-progress" style={{ width: '90%' }}></div>
                 </div>
               </div>
             </div>
@@ -513,7 +513,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '91%'}}></div>
+                  <div className="skill-progress" style={{ width: '91%' }}></div>
                 </div>
               </div>
             </div>
@@ -528,7 +528,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '88%'}}></div>
+                  <div className="skill-progress" style={{ width: '88%' }}></div>
                 </div>
               </div>
             </div>
@@ -543,7 +543,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '89%'}}></div>
+                  <div className="skill-progress" style={{ width: '89%' }}></div>
                 </div>
               </div>
             </div>
@@ -558,7 +558,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '85%'}}></div>
+                  <div className="skill-progress" style={{ width: '85%' }}></div>
                 </div>
               </div>
             </div>
@@ -573,7 +573,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '87%'}}></div>
+                  <div className="skill-progress" style={{ width: '87%' }}></div>
                 </div>
               </div>
             </div>
@@ -588,7 +588,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '90%'}}></div>
+                  <div className="skill-progress" style={{ width: '90%' }}></div>
                 </div>
               </div>
             </div>
@@ -603,7 +603,7 @@ function App() {
               </p>
               <div className="skill-level">
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{width: '89%'}}></div>
+                  <div className="skill-progress" style={{ width: '89%' }}></div>
                 </div>
               </div>
             </div>
@@ -623,7 +623,7 @@ function App() {
             <div className="contact-info">
               <div className="contact-item">
                 <i className="fas fa-envelope"></i>
-                <a href="mailto:aniket.sharma.ani04@gmail.com" style={{color: 'inherit', textDecoration: 'none'}}>
+                <a href="mailto:aniket.sharma.ani04@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>
                   Email: aniket.sharma.ani04@gmail.com
                 </a>
               </div>
@@ -632,9 +632,9 @@ function App() {
                 <span>Phone: +91 9868459890</span>
               </div>
             </div>
-            <a 
-              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/aniket-sharma-07ba6617b/"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
