@@ -765,7 +765,7 @@ function App() {
           <div className="section-divider"></div>
           <div className="contact-content">
             <p className="contact-intro">
-              I'm always open to new opportunities—feel free to get in touch through email or social media. I look forward to connecting with you!
+              I'm always open to new opportunities, feel free to get in touch through email or social media. I look forward to connecting with you!
             </p>
             <div className="contact-info">
               <div className="contact-item">
