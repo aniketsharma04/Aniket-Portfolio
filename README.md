@@ -1,124 +1,72 @@
-Aniket Portfolio 🚀
+# Aniket Sharma — Portfolio (Next.js)
 
-A modern and responsive personal portfolio website built using React, showcasing my projects, experience, skills, and achievements.
-This portfolio is designed to be clean, fast, and visually appealing — giving visitors a quick overview of who I am and what I do.
+A clean, dark-themed personal portfolio inspired by Jillur Rahman's design, built with **Next.js 14 App Router**.
 
----
+## 🚀 Quick Start
 
-🌐 Live Portfolio: https://portfolio-main-86tq.vercel.app/
-
-📦 GitHub Repository: https://github.com/aniketsharma04/Aniket-Portfolio
-
----
-
-📌 Features
-
-⚡ Fast and responsive UI
-
-🎨 Modern and minimal design
-
-📱 Fully mobile-responsive
-
-🧩 Modular and reusable components
-
-🌙 Light & clean theme
-
-🔗 Section for skills, projects, experience, contact, and more
-
-🚀 Hosted live on Vercel
-
----
-
-🛠️ Tech Stack
-
-Frontend
-
-React.js
-
-JavaScript (ES6+)
-
-Tailwind CSS / CSS (whichever applies)
-
-Framer Motion (if animations used)
-
-Deployment
-
-Vercel
-
----
-
-📁 Project Structure
-Aniket-Portfolio/
-│
-├── public/              # Static assets
-├── src/
-│   ├── components/      # Reusable components
-│   ├── pages/           # Main sections/pages
-│   ├── assets/          # Images, icons, etc.
-│   ├── styles/          # Global styles
-│   ├── App.js           # App entry
-│   └── index.js         # React DOM entry point
-│
-├── package.json
-├── README.md
-└── vercel.json          # (if configured)
-
----
-
-🚀 Getting Started (Run Locally)
-1. Clone the repository
-git clone https://github.com/aniketsharma04/Aniket-Portfolio.git
-
-2. Navigate into the project directory
-cd Aniket-Portfolio
-
-3. Install dependencies
+```bash
+# Install dependencies
 npm install
 
-4. Start development server
-npm start
+# Run development server
+npm run dev
+# → open http://localhost:3000
 
-
-Your app will run locally at:
-👉 http://localhost:3000
-
----
-
-📦 Deployment
-
-This portfolio is deployed using Vercel.
-
-To deploy:
-
+# Build for production
 npm run build
+npm start
+```
 
+## 📁 Project Structure
 
-Then upload the build/ folder to Vercel OR directly connect GitHub repo to Vercel for auto-deploy.
+```
+aniket-portfolio/
+├── app/
+│   ├── layout.js        # Root layout + metadata + Google Fonts
+│   ├── page.js          # Main page (assembles all sections)
+│   └── globals.css      # All styles (CSS variables, dark/light theme)
+├── components/
+│   ├── Sidebar.jsx      # Fixed left sidebar + nav + socials
+│   ├── Hero.jsx         # Landing section with stats banner
+│   ├── About.jsx        # Bio, skill bars, about cards
+│   ├── Experience.jsx   # Alternating timeline layout
+│   ├── Projects.jsx     # 6-project grid
+│   ├── Blog.jsx         # 3 article cards
+│   ├── Testimonials.jsx # 2-column recommendation cards
+│   ├── Contact.jsx      # Contact form + details
+│   └── Footer.jsx       # Footer with newsletter + theme toggle
+└── data/
+    └── index.js         # ✏️ All your content & links in one place
+```
 
----
+## ✏️ Updating Your Content
 
-🖼️ Screenshots
+All content lives in **`data/index.js`** — just edit that file:
 
-(Add screenshots here if you want — homepage, projects section, etc.)
+- Update links (LinkedIn, GitHub, resume, etc.)
+- Add/remove projects
+- Update experience entries
+- Change skills & percentages
 
----
+## 🌐 Deploy to Vercel
 
-📬 Contact
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
-If you’d like to collaborate or have a question:
+# Deploy
+vercel
+```
 
-Name: Aniket Sharma
-Email: (add your email here)
-LinkedIn: (add your profile link here)
-GitHub: https://github.com/aniketsharma04
+Or connect your GitHub repo at **vercel.com** for automatic deployments.
 
+## 🎨 Features
 
----
-
-⭐ Show Your Support
-
-If you found this project useful, please give the repo a ⭐ on GitHub — it helps more than you think!
-
-📌 LinkedIn: https://www.linkedin.com/in/aniket-sharma-07ba6617b/
-
-Contact: aniketsharma.ani04@gmail.com
+- ✅ Dark / Light mode toggle
+- ✅ Responsive (mobile sidebar)
+- ✅ Alternating timeline for Experience
+- ✅ Animated skill bars
+- ✅ Active nav highlighting on scroll
+- ✅ SEO metadata (title, description, OpenGraph)
+- ✅ All 6 projects included
+- ✅ Correct links (LinkedIn, GitHub, CodeChef, GFG, Portfolio)
