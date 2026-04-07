@@ -1,28 +1,45 @@
+import Image from "next/image";
 import { personal } from "@/data";
 
 export default function Hero() {
   return (
     <section id="home">
-      <div className="h-avail">
-        <span className="h-dot" />
-        Available for Full Stack Roles &amp; Projects
-      </div>
+      <div className="h-wrap">
+        <div className="h-left">
+          <div className="h-avail">
+            <span className="h-dot" />
+            Available for Full Stack Roles &amp; Projects
+          </div>
 
-      <h1 className="h-h1">{personal.tagline}</h1>
-      <p className="h-desc">{personal.description}</p>
+          <h1 className="h-h1">{personal.tagline}</h1>
+          <p className="h-desc">{personal.description}</p>
 
-      <div className="h-btns">
-        <a href="#projects" className="btn-f">View my work</a>
-        <a href="#contact" className="btn-g">Let&apos;s work together</a>
-        <a href={personal.links.resume} target="_blank" rel="noreferrer" className="btn-g">
-          View Resume ↓
-        </a>
-      </div>
+          <div className="h-btns">
+            <a href="#projects" className="btn-f">View my work</a>
+            <a href="#contact" className="btn-g">Let&apos;s work together</a>
+            <a href={personal.links.resume} target="_blank" rel="noreferrer" className="btn-g">
+              View Resume ↓
+            </a>
+          </div>
 
-      <div className="h-stack">
-        {personal.stack.map((s) => (
-          <span key={s} className="pill">{s}</span>
-        ))}
+          <div className="h-stack">
+            {personal.stack.map((s) => (
+              <span key={s} className="pill">{s}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="h-right">
+          <div className="h-photo-wrap">
+            <Image
+              src="/about.jpg"
+              alt="Aniket Sharma"
+              fill
+              style={{ objectFit: "cover", objectPosition: "center top" }}
+              priority
+            />
+          </div>
+        </div>
       </div>
 
       <div className="h-banner">

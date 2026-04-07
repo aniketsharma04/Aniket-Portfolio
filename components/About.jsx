@@ -24,7 +24,9 @@ export default function About() {
 
   return (
     <section id="about" className="sec">
-      <div className="stag">About me</div>
+      <div className="ab-title-row">
+        <div className="stag">About me</div>
+      </div>
       <div className="ab-grid">
         {/* Left */}
         <div>
@@ -50,39 +52,51 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right — full square photo */}
+        {/* Right — profile card */}
         <div>
-          <div className="ab-r-frame" style={{ aspectRatio: "1/1", padding: 0, background: "none", border: "1px solid var(--border)", borderRadius: "14px", overflow: "hidden", marginBottom: "22px", display: "block", position: "relative" }}>
-            <Image
-              src="/about.jpg"
-              alt="Aniket Sharma"
-              fill
-              style={{ objectFit: "contain", objectPosition: "center center" }}
-            />
-          </div>
-
-          <p className="ab-bio">{personal.bio}</p>
-          <p className="sk-lbl">Core skills</p>
-
-          {personal.skills.map((skill, i) => (
-            <div key={skill.name} className="sk-row">
-              <div className="sk-top">
-                <span>{skill.name}</span>
-                <span>{skill.value}%</span>
-              </div>
-              <div className="sk-bar">
-                <div
-                  className="sk-fill"
-                  data-w={`${skill.value}%`}
-                  ref={(el) => (fillsRef.current[i] = el)}
+          <div className="ab-profile-card">
+            {/* Card header */}
+            <div className="ab-pc-hdr">
+              <div className="ab-pc-photo">
+                <Image
+                  src="/avatar.jpg"
+                  alt="Aniket Sharma"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "center top" }}
                 />
               </div>
+              <div>
+                <div className="ab-pc-name">{personal.name}</div>
+                <div className="ab-pc-role">{personal.role}</div>
+              </div>
             </div>
-          ))}
 
-          <p className="ab-open">
-            Open to: <span>{personal.openTo}</span>
-          </p>
+            <p className="ab-bio">{personal.bio}</p>
+
+            <div className="ab-pc-divider" />
+
+            <p className="sk-lbl">Core skills</p>
+            {personal.skills.map((skill, i) => (
+              <div key={skill.name} className="sk-row">
+                <div className="sk-top">
+                  <span>{skill.name}</span>
+                  <span>{skill.value}%</span>
+                </div>
+                <div className="sk-bar">
+                  <div
+                    className="sk-fill"
+                    data-w={`${skill.value}%`}
+                    ref={(el) => (fillsRef.current[i] = el)}
+                  />
+                </div>
+              </div>
+            ))}
+
+            <div className="ab-pc-divider" />
+            <p className="ab-open">
+              Open to: <span>{personal.openTo}</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>

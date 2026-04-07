@@ -145,9 +145,9 @@ export const projects = [
   {
     emoji: "🌐",
     bgFrom: "#0e1117", bgTo: "#1a2332",
-    tags: ["React.js", "CSS3", "JavaScript", "Responsive Design"],
+    tags: ["Next.js 14", "React 18", "CSS", "JavaScript"],
     name: "Portfolio Website",
-    desc: "A responsive personal portfolio website built with React.js to showcase projects, skills, and professional experience. Features include smooth scrolling navigation, contact form integration, and optimized performance across all devices.",
+    desc: "A modern, high-performance personal portfolio built with Next.js 14 (App Router) and React 18. Features a centralized content management system via data/index.js, responsive dark/light mode, and SEO-optimized architecture.",
     link: "https://portfolio-main-86tq.vercel.app/",
     linkLabel: "Live demo", linkType: "external",
   },
