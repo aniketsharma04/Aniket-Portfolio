@@ -1,18 +1,21 @@
 import Image from "next/image";
 import { personal } from "@/data";
+import FocusSwitch from "@/components/FocusSwitch";
 
-export default function Hero() {
+export default function Hero({ view, focus, onFocusChange }) {
   return (
     <section id="home">
       <div className="h-wrap">
         <div className="h-left">
+          <FocusSwitch focus={focus} onChange={onFocusChange} />
+
           <div className="h-avail">
             <span className="h-dot" />
-            Available for Full Stack Roles &amp; Projects
+            {view.availability}
           </div>
 
-          <h1 className="h-h1">{personal.tagline}</h1>
-          <p className="h-desc">{personal.description}</p>
+          <h1 className="h-h1">{view.tagline}</h1>
+          <p className="h-desc">{view.description}</p>
 
           <div className="h-btns">
             <a href="#projects" className="btn-f">View my work</a>
@@ -23,7 +26,7 @@ export default function Hero() {
           </div>
 
           <div className="h-stack">
-            {personal.stack.map((s) => (
+            {view.stack.map((s) => (
               <span key={s} className="pill">{s}</span>
             ))}
           </div>
@@ -35,6 +38,7 @@ export default function Hero() {
               src="/about.jpg"
               alt="Aniket Sharma"
               fill
+              sizes="(max-width: 860px) 100vw, 420px"
               style={{ objectFit: "cover", objectPosition: "center top" }}
               priority
             />

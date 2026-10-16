@@ -26,7 +26,7 @@ const navItems = [
   { href: "#contact",     label: "Contact",     icon: <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg> },
 ];
 
-export default function Sidebar({ isOpen, onClose }) {
+export default function Sidebar({ isOpen, onClose, role }) {
   const [active, setActive] = useState("#home");
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Sidebar({ isOpen, onClose }) {
         <Image src="/avatar.jpg" alt="Aniket Sharma" width={88} height={88} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", borderRadius: "50%" }} />
       </div>
       <div className="sb-name">{personal.name}</div>
-      <div className="sb-role">{personal.role}</div>
+      <div className="sb-role">{role}</div>
       <nav>
         <ul className="sb-nav">
           {navItems.map((item) => (

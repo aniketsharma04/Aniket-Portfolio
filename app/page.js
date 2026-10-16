@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -9,10 +9,28 @@ import Blog from "@/components/Blog";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { focusViews } from "@/data";
 
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
+  const [focus, setFocus] = useState("all");
+
+  // Shared links like /?focus=ds open straight into that view
+  useEffect(() => {
+    const f = new URLSearchParams(window.location.search).get("focus");
+    if (f && focusViews[f]) setFocus(f);
+  }, []);
+
+  const changeFocus = (f) => {
+    setFocus(f);
+    const url = new URL(window.location.href);
+    if (f === "all") url.searchParams.delete("focus");
+    else url.searchParams.set("focus", f);
+    window.history.replaceState(null, "", url);
+  };
+
+  const view = focusViews[focus];
 
   const toggleTheme = () => {
     const html = document.documentElement;
@@ -36,13 +54,13 @@ export default function Home() {
         </button>
       </header>
 
-      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} role={view.role} />
 
       <div className="main" onClick={() => sidebarOpen && setSidebarOpen(false)}>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
+        <Hero view={view} focus={focus} onFocusChange={changeFocus} />
+        <About view={view} />
+        <Experience focus={focus} />
+        <Projects focus={focus} />
         <Blog />
         <Testimonials />
         <Contact />
