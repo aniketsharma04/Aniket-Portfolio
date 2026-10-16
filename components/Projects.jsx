@@ -1,4 +1,7 @@
-import { projects } from "@/data";
+"use client";
+import { useEffect, useState } from "react";
+import { projects, focusViews } from "@/data";
+import ProjectMedia from "@/components/ProjectMedia";
 
 const GithubIcon = () => (
   <svg fill="currentColor" viewBox="0 0 24 24" style={{ width: 13, height: 13 }}>
@@ -12,38 +15,56 @@ const ExternalIcon = () => (
   </svg>
 );
 
-export default function Projects() {
+export default function Projects({ focus }) {
+  const [showAll, setShowAll] = useState(false);
+  useEffect(() => setShowAll(false), [focus]);
+
+  // In a role view, show that role's projects; the rest stay one click away
+  const relevant = focus === "all" ? projects : projects.filter((p) => p.tracks.includes(focus));
+  const others = projects.filter((p) => !relevant.includes(p));
+  const shown = showAll ? [...relevant, ...others] : relevant;
+
   return (
     <section id="projects" className="sec">
       <div className="stag">Work</div>
       <h2 className="sh">Selected Projects</h2>
-      <p className="sd">Featured work — case studies &amp; live demos.</p>
+      <p className="sd">
+        {focus === "all"
+          ? "Featured work: case studies & live demos."
+          : `Featured ${focusViews[focus].workLabel} work: client projects, case studies & live demos.`}
+      </p>
 
       <div className="proj-grid">
-        {projects.map((p) => (
+        {shown.map((p) => (
           <div key={p.name} className="proj-card">
             <div className="proj-thumb">
-              <div
-                className="proj-img"
-                style={{ background: `linear-gradient(135deg, ${p.bgFrom}, ${p.bgTo})` }}
-              >
-                {p.emoji}
-              </div>
+              <ProjectMedia project={p} />
             </div>
             <div className="proj-body">
               <div className="proj-tags">
                 {p.tags.map((t) => <span key={t} className="ptg">{t}</span>)}
               </div>
               <div className="proj-name">{p.name}</div>
+              {p.org && <div className="proj-org">{p.org}</div>}
               <p className="proj-desc">{p.desc}</p>
-              <a href={p.link} target="_blank" rel="noreferrer" className="proj-lnk">
-                {p.linkType === "github" ? <GithubIcon /> : <ExternalIcon />}
-                {p.linkLabel}
-              </a>
+              {p.link ? (
+                <a href={p.link} target="_blank" rel="noreferrer" className="proj-lnk">
+                  {p.linkType === "github" ? <GithubIcon /> : <ExternalIcon />}
+                  {p.linkLabel}
+                </a>
+              ) : (
+                <span className="proj-private">Client project · code is confidential</span>
+              )}
             </div>
           </div>
         ))}
       </div>
+
+      {others.length > 0 && (
+        <button type="button" className="btn-g proj-more" onClick={() => setShowAll(!showAll)}>
+          {showAll ? "Show fewer projects" : `Show ${others.length} more project${others.length > 1 ? "s" : ""}`}
+        </button>
+      )}
     </section>
   );
 }
