@@ -11,7 +11,7 @@ export default function Footer({ onThemeToggle, isDark }) {
       <div className="ft-top">
         <div>
           <div className="ft-brand-name">{personal.name}</div>
-          <p className="ft-brand-desc">I build performant, scalable web apps and AI developer tools. Available for full-time roles &amp; internships.</p>
+          <p className="ft-brand-desc">Data scientist &amp; software engineer building AI-powered products end to end. Available for full-time roles.</p>
           <div className="ft-soc">
             <a href={personal.links.github} target="_blank" rel="noreferrer"><GithubIcon /></a>
             <a href={personal.links.linkedin} target="_blank" rel="noreferrer"><LinkedInIcon /></a>

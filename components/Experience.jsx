@@ -1,14 +1,16 @@
 import { experience } from "@/data";
 
-export default function Experience() {
+export default function Experience({ focus }) {
+  const items = experience.map((item) => ({ ...item, ...item.byFocus?.[focus] }));
+
   return (
     <section id="experience" className="sec">
       <p className="stag" style={{ display:"block", marginBottom:"6px", fontSize:"11px", letterSpacing:"1px", textTransform:"uppercase", color:"var(--t3)" }}>Career Path</p>
       <h2 className="sh">Experience &amp; Education</h2>
-      <p className="sd">A look at my professional roles and academic background that have shaped my journey as a developer.</p>
+      <p className="sd">A look at my professional roles and academic background that have shaped my journey in data science and software engineering.</p>
 
       <div className="tl">
-        {experience.map((item, i) => (
+        {items.map((item, i) => (
           <div key={i} className={`tl-item tl-${item.side}`}>
             {item.side === "left" ? (
               <>

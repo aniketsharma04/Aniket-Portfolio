@@ -3,9 +3,10 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { personal } from "@/data";
 
-export default function About() {
+export default function About({ view }) {
   const fillsRef = useRef([]);
 
+  // Re-run when the view changes so newly shown skill bars animate in too
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -20,7 +21,7 @@ export default function About() {
     );
     fillsRef.current.forEach((el) => el && observer.observe(el));
     return () => observer.disconnect();
-  }, []);
+  }, [view]);
 
   return (
     <section id="about" className="sec">
@@ -30,7 +31,7 @@ export default function About() {
       <div className="ab-grid">
         {/* Left */}
         <div>
-          <div className="ab-badge">Final year B.Tech student</div>
+          <div className="ab-badge">AI Team · Navyug Infosolutions</div>
           {personal.about.map((p, i) => (
             <p key={i} className="ab-p" dangerouslySetInnerHTML={{ __html: p }} />
           ))}
@@ -52,7 +53,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right — profile card */}
+        {/* Right: profile card */}
         <div>
           <div className="ab-profile-card">
             {/* Card header */}
@@ -62,12 +63,13 @@ export default function About() {
                   src="/avatar.jpg"
                   alt="Aniket Sharma"
                   fill
+                  sizes="52px"
                   style={{ objectFit: "cover", objectPosition: "center top" }}
                 />
               </div>
               <div>
                 <div className="ab-pc-name">{personal.name}</div>
-                <div className="ab-pc-role">{personal.role}</div>
+                <div className="ab-pc-role">{view.role}</div>
               </div>
             </div>
 
@@ -76,7 +78,15 @@ export default function About() {
             <div className="ab-pc-divider" />
 
             <p className="sk-lbl">Core skills</p>
-            {personal.skills.map((skill, i) => (
+            {view.skillGroups?.map((group) => (
+              <div key={group.name} className="sk-grp">
+                <div className="sk-grp-n">{group.name}</div>
+                <div className="sk-chips">
+                  {group.items.map((s) => <span key={s} className="ptg">{s}</span>)}
+                </div>
+              </div>
+            ))}
+            {view.skills?.map((skill, i) => (
               <div key={skill.name} className="sk-row">
                 <div className="sk-top">
                   <span>{skill.name}</span>

@@ -39,11 +39,11 @@ export default function Contact() {
             <div className="ct-icon">💼</div>
             <div><div className="ct-lbl">Availability</div><div className="ct-val">Open for full-time &amp; internships</div></div>
           </div>
-          <div className="ct-avail">Open for opportunities — responds within 24 hrs</div>
+          <div className="ct-avail">Open for opportunities · responds within 24 hrs</div>
         </div>
 
         <form onSubmit={handleSubmit}>
-          <p className="fn">Contact form — all messages go directly to Aniket.</p>
+          <p className="fn">Contact form: all messages go directly to Aniket.</p>
           <div className="fr">
             <div className="fg">
               <label>Name</label>
