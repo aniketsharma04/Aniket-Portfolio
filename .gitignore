@@ -34,3 +34,6 @@ next-env.d.ts
 
 # build log
 build_output.txt
+
+# raw source videos (web copies live in public/projects)
+/videos/
