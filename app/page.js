@@ -1,6 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
-import Sidebar from "@/components/Sidebar";
+import { useState } from "react";
+import { MotionConfig } from "motion/react";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -12,60 +13,28 @@ import Footer from "@/components/Footer";
 import { focusViews } from "@/data";
 
 export default function Home() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
-  const [focus, setFocus] = useState("all");
-
-  // Shared links like /?focus=ds open straight into that view
-  useEffect(() => {
-    const f = new URLSearchParams(window.location.search).get("focus");
-    if (f && focusViews[f]) setFocus(f);
-  }, []);
-
-  const changeFocus = (f) => {
-    setFocus(f);
-    const url = new URL(window.location.href);
-    if (f === "all") url.searchParams.delete("focus");
-    else url.searchParams.set("focus", f);
-    window.history.replaceState(null, "", url);
-  };
-
-  const view = focusViews[focus];
+  const view = focusViews.all;
 
   const toggleTheme = () => {
-    const html = document.documentElement;
     const newTheme = isDark ? "light" : "dark";
-    html.setAttribute("data-theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
     setIsDark(!isDark);
   };
 
   return (
-    <>
-      {/* Mobile Header */}
-      <header className="mhdr">
-        <div className="mhdr-left">
-          <div className="mhdr-av" style={{ overflow: "hidden", background: "none" }}>
-            <img src="/avatar.jpg" alt="AS" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", borderRadius: "50%" }} />
-          </div>
-          Aniket Sharma
-        </div>
-        <button className="mhdr-btn" onClick={() => setSidebarOpen(!sidebarOpen)} aria-label="Menu">
-          <span /><span /><span />
-        </button>
-      </header>
-
-      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} role={view.role} />
-
-      <div className="main" onClick={() => sidebarOpen && setSidebarOpen(false)}>
-        <Hero view={view} focus={focus} onFocusChange={changeFocus} />
+    <MotionConfig reducedMotion="user">
+      <Navbar isDark={isDark} onThemeToggle={toggleTheme} />
+      <main className="main">
+        <Hero view={view} />
         <About view={view} />
-        <Experience focus={focus} />
-        <Projects focus={focus} />
+        <Experience />
+        <Projects />
         <Blog />
         <Testimonials />
         <Contact />
-        <Footer onThemeToggle={toggleTheme} isDark={isDark} />
-      </div>
-    </>
+      </main>
+      <Footer />
+    </MotionConfig>
   );
 }
