@@ -1,38 +1,54 @@
+"use client";
 import Image from "next/image";
 import { personal } from "@/data";
-import FocusSwitch from "@/components/FocusSwitch";
+import ResumeButtons from "@/components/ResumeButtons";
+import { BlurText, Reveal } from "@/components/ui/reveal";
 
-export default function Hero({ view, focus, onFocusChange }) {
+export default function Hero({ view }) {
   return (
     <section id="home">
+      {/* Soft glow and a faded grid behind the hero */}
+      <div className="h-bg" aria-hidden="true">
+        <div className="h-glow" />
+        <div className="h-grid" />
+      </div>
+
       <div className="h-wrap">
         <div className="h-left">
-          <FocusSwitch focus={focus} onChange={onFocusChange} />
-
-          <div className="h-avail">
+          <Reveal y={10} className="h-avail">
             <span className="h-dot" />
             {view.availability}
-          </div>
+          </Reveal>
 
-          <h1 className="h-h1">{view.tagline}</h1>
-          <p className="h-desc">{view.description}</p>
+          <BlurText
+            as="h1"
+            className="h-h1"
+            text={view.tagline}
+            delay={0.1}
+            stagger={0.035}
+          />
 
-          <div className="h-btns">
-            <a href="#projects" className="btn-f">View my work</a>
-            <a href="#contact" className="btn-g">Let&apos;s work together</a>
-            <a href={personal.links.resume} target="_blank" rel="noreferrer" className="btn-g">
-              View Resume ↓
+          <Reveal delay={0.55} y={12}>
+            <p className="h-desc">{view.description}</p>
+          </Reveal>
+
+          <Reveal delay={0.7} y={12} className="h-btns">
+            <a href="#projects" className="btn-f">
+              See my work →
             </a>
-          </div>
+            <ResumeButtons />
+          </Reveal>
 
-          <div className="h-stack">
+          <Reveal delay={0.85} y={12} className="h-stack">
             {view.stack.map((s) => (
-              <span key={s} className="pill">{s}</span>
+              <span key={s} className="pill">
+                {s}
+              </span>
             ))}
-          </div>
+          </Reveal>
         </div>
 
-        <div className="h-right">
+        <Reveal delay={0.3} y={30} className="h-right">
           <div className="h-photo-wrap">
             <Image
               src="/about.jpg"
@@ -42,25 +58,27 @@ export default function Hero({ view, focus, onFocusChange }) {
               style={{ objectFit: "cover", objectPosition: "center top" }}
               priority
             />
+            <div className="h-photo-tag">
+              <span className="h-dot" /> Currently on the AI team at Navyug
+            </div>
           </div>
-        </div>
+        </Reveal>
       </div>
 
-      <div className="h-banner">
-        <div className="h-banner-in">
-          {personal.stats.map((stat, i) => (
-            <span key={stat.label} style={{ display: "contents" }}>
-              {i > 0 && <div className="bdiv" />}
-              <a href={stat.link} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-                <div className="bs">
-                  <div className="bs-n">{stat.value}</div>
-                  <div className="bs-l">{stat.label}</div>
-                </div>
-              </a>
-            </span>
-          ))}
-        </div>
-      </div>
+      <Reveal delay={1} className="h-stats">
+        {personal.stats.map((stat) => (
+          <a
+            key={stat.label}
+            href={stat.link}
+            target="_blank"
+            rel="noreferrer"
+            className="bs"
+          >
+            <div className="bs-n">{stat.value}</div>
+            <div className="bs-l">{stat.label}</div>
+          </a>
+        ))}
+      </Reveal>
     </section>
   );
 }

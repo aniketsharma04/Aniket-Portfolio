@@ -2,6 +2,9 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { personal } from "@/data";
+import ResumeButtons from "@/components/ResumeButtons";
+import Spotlight from "@/components/ui/spotlight";
+import { Reveal } from "@/components/ui/reveal";
 
 export default function About({ view }) {
   const fillsRef = useRef([]);
@@ -17,7 +20,7 @@ export default function About({ view }) {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
     fillsRef.current.forEach((el) => el && observer.observe(el));
     return () => observer.disconnect();
@@ -28,34 +31,43 @@ export default function About({ view }) {
       <div className="ab-title-row">
         <div className="stag">About me</div>
       </div>
-      <div className="ab-grid">
+      <Reveal className="ab-grid">
         {/* Left */}
         <div>
           <div className="ab-badge">AI Team · Navyug Infosolutions</div>
           {personal.about.map((p, i) => (
-            <p key={i} className="ab-p" dangerouslySetInnerHTML={{ __html: p }} />
+            <p
+              key={i}
+              className="ab-p"
+              dangerouslySetInnerHTML={{ __html: p }}
+            />
           ))}
           <div className="ab-btns">
-            <a href={personal.links.resume} target="_blank" rel="noreferrer" className="btn-f" style={{ fontSize: "13px", padding: "10px 20px" }}>
-              View Resume
-            </a>
-            <a href="#projects" className="btn-g" style={{ fontSize: "13px", padding: "10px 20px" }}>
+            <ResumeButtons
+              className="btn-f"
+              style={{ fontSize: "13px", padding: "10px 20px" }}
+            />
+            <a
+              href="#projects"
+              className="btn-g"
+              style={{ fontSize: "13px", padding: "10px 20px" }}
+            >
               See projects
             </a>
           </div>
           <div className="ab-cards">
             {personal.aboutCards.map((card) => (
-              <div key={card.title} className="ab-card">
+              <Spotlight key={card.title} className="ab-card">
                 <h4>{card.title}</h4>
                 <p>{card.value}</p>
-              </div>
+              </Spotlight>
             ))}
           </div>
         </div>
 
         {/* Right: profile card */}
         <div>
-          <div className="ab-profile-card">
+          <Spotlight className="ab-profile-card" size={480}>
             {/* Card header */}
             <div className="ab-pc-hdr">
               <div className="ab-pc-photo">
@@ -82,7 +94,11 @@ export default function About({ view }) {
               <div key={group.name} className="sk-grp">
                 <div className="sk-grp-n">{group.name}</div>
                 <div className="sk-chips">
-                  {group.items.map((s) => <span key={s} className="ptg">{s}</span>)}
+                  {group.items.map((s) => (
+                    <span key={s} className="ptg">
+                      {s}
+                    </span>
+                  ))}
                 </div>
               </div>
             ))}
@@ -106,9 +122,9 @@ export default function About({ view }) {
             <p className="ab-open">
               Open to: <span>{personal.openTo}</span>
             </p>
-          </div>
+          </Spotlight>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
