@@ -9,7 +9,9 @@ export default function Hero({ view, focus, onFocusChange, isDark }) {
       <HeroParticles isDark={isDark} />
       <div className="h-wrap">
         <div className="h-left">
-          <FocusSwitch focus={focus} onChange={onFocusChange} />
+          {onFocusChange && (
+            <FocusSwitch focus={focus} onChange={onFocusChange} />
+          )}
 
           <div className="h-avail">
             <span className="h-dot" />
@@ -20,10 +22,10 @@ export default function Hero({ view, focus, onFocusChange, isDark }) {
           <p className="h-desc">{view.description}</p>
 
           <div className="h-btns">
-            <a href="#projects" className="btn-f">
+            <a href="#projects" className="btn-f" data-mascot="excited">
               View my work
             </a>
-            <a href="#contact" className="btn-g">
+            <a href="#contact" className="btn-g" data-mascot="excited">
               Let&apos;s work together
             </a>
             <a

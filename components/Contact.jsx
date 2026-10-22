@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { personal } from "@/data";
+import { mascot } from "@/components/Mascot";
 
 // Web3Forms emails every submission to the inbox this key was created for (free plan).
 // The key is meant to be public: it can only send to that inbox. Get one at https://web3forms.com
@@ -18,10 +19,12 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) {
       setStatus("error");
       setError("Please fill in every field.");
+      mascot("confused", "Fill in every field first 🙏");
       return;
     }
     setStatus("sending");
     setError("");
+    mascot("thinking", "Sending…");
     try {
       // Honeypot filled in means a bot: pretend it worked and send nothing
       if (!form.website) {
@@ -49,9 +52,11 @@ export default function Contact() {
       }
       setStatus("sent");
       setForm(empty);
+      mascot("celebrate", "Message sent! 🎉");
       setTimeout(() => setStatus("idle"), 4000);
     } catch (err) {
       setStatus("error");
+      mascot("confused", "Oops, that didn't send 😕");
       setError(
         err.name === "TimeoutError"
           ? "This is taking too long. Please email me directly."
