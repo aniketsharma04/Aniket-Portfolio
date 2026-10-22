@@ -44,20 +44,51 @@ export default function Home() {
       {/* Mobile Header */}
       <header className="mhdr">
         <div className="mhdr-left">
-          <div className="mhdr-av" style={{ overflow: "hidden", background: "none" }}>
-            <img src="/avatar.jpg" alt="AS" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", borderRadius: "50%" }} />
+          <div
+            className="mhdr-av"
+            style={{ overflow: "hidden", background: "none" }}
+          >
+            <img
+              src="/avatar.jpg"
+              alt="AS"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center top",
+                borderRadius: "50%",
+              }}
+            />
           </div>
           Aniket Sharma
         </div>
-        <button className="mhdr-btn" onClick={() => setSidebarOpen(!sidebarOpen)} aria-label="Menu">
-          <span /><span /><span />
+        <button
+          className="mhdr-btn"
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          aria-label="Menu"
+        >
+          <span />
+          <span />
+          <span />
         </button>
       </header>
 
-      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} role={view.role} />
+      <Sidebar
+        isOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+        role={view.role}
+      />
 
-      <div className="main" onClick={() => sidebarOpen && setSidebarOpen(false)}>
-        <Hero view={view} focus={focus} onFocusChange={changeFocus} />
+      <div
+        className="main"
+        onClick={() => sidebarOpen && setSidebarOpen(false)}
+      >
+        <Hero
+          view={view}
+          focus={focus}
+          onFocusChange={changeFocus}
+          isDark={isDark}
+        />
         <About view={view} />
         <Experience focus={focus} />
         <Projects focus={focus} />
