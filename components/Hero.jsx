@@ -2,6 +2,7 @@ import Image from "next/image";
 import { personal } from "@/data";
 import FocusSwitch from "@/components/FocusSwitch";
 import HeroParticles from "@/components/HeroParticles";
+import GitHubGrid from "@/components/GitHubGrid";
 
 export default function Hero({ view, focus, onFocusChange, isDark }) {
   return (
@@ -62,6 +63,7 @@ export default function Hero({ view, focus, onFocusChange, isDark }) {
       </div>
 
       <div className="h-banner">
+        <GitHubGrid profileUrl={personal.links.github} />
         <div className="h-banner-in">
           {personal.stats.map((stat, i) => (
             <span key={stat.label} style={{ display: "contents" }}>
