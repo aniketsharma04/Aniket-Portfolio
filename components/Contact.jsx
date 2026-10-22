@@ -4,7 +4,7 @@ import { personal } from "@/data";
 
 // Web3Forms emails every submission to the inbox this key was created for (free plan).
 // The key is meant to be public: it can only send to that inbox. Get one at https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = "PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+const WEB3FORMS_ACCESS_KEY = "ced92535-e5bc-4fbd-b0df-c2861d50fbb5";
 
 export default function Contact() {
   const empty = { name: "", email: "", message: "", website: "" };
