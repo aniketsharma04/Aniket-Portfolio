@@ -9,7 +9,12 @@ import Blog from "@/components/Blog";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Mascot from "@/components/Mascot";
 import { focusViews } from "@/data";
+
+// The "Viewing as" role switch is hidden for now, so everyone sees "All".
+// Set to true to bring back the switch and ?focus= links.
+const FOCUS_SWITCH = false;
 
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,6 +23,7 @@ export default function Home() {
 
   // Shared links like /?focus=ds open straight into that view
   useEffect(() => {
+    if (!FOCUS_SWITCH) return;
     const f = new URLSearchParams(window.location.search).get("focus");
     if (f && focusViews[f]) setFocus(f);
   }, []);
@@ -86,7 +92,7 @@ export default function Home() {
         <Hero
           view={view}
           focus={focus}
-          onFocusChange={changeFocus}
+          onFocusChange={FOCUS_SWITCH ? changeFocus : undefined}
           isDark={isDark}
         />
         <About view={view} />
@@ -97,6 +103,8 @@ export default function Home() {
         <Contact />
         <Footer onThemeToggle={toggleTheme} isDark={isDark} />
       </div>
+
+      <Mascot />
     </>
   );
 }
