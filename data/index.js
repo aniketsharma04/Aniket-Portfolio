@@ -481,33 +481,6 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    initials: "SK",
-    name: "Senior Developer",
-    role: "AI Team · Navyug Infosolutions",
-    text: '"Aniket picked up the VS Code extension API and Gemini integration incredibly fast. The orchestration pipeline he designed is clean, robust, and genuinely production-ready. A strong problem-solver."',
-  },
-  {
-    initials: "PM",
-    name: "Tech Lead",
-    role: "Full Stack · PlayGG, Jaipur",
-    text: '"Delivered the entire cafe management dashboard (real-time features, modular workflows, clean UI) on schedule. Aniket writes maintainable code that\'s easy to build on."',
-  },
-  {
-    initials: "CP",
-    name: "Classmate, IIIT Nagpur",
-    role: "B.Tech ECE · Batch 2022–26",
-    text: '"One of the most consistent competitive programmers in our batch. A 4-star on CodeChef and 500+ problems solved. Aniket brings the same rigour to every project he builds."',
-  },
-  {
-    initials: "AR",
-    name: "Project Collaborator",
-    role: "Open Source · Remote",
-    text: '"The Connect App\'s infinite scroll and React Query caching felt seamless even at scale. Aniket has a rare ability to balance developer experience with end-user performance."',
-  },
-];
-
 export const blogs = [
   {
     emoji: "🧠",

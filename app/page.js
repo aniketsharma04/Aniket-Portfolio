@@ -6,7 +6,6 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Blog from "@/components/Blog";
-import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Mascot from "@/components/Mascot";
@@ -99,7 +98,6 @@ export default function Home() {
         <Experience focus={focus} />
         <Projects focus={focus} />
         <Blog />
-        <Testimonials />
         <Contact />
         <Footer onThemeToggle={toggleTheme} isDark={isDark} />
       </div>

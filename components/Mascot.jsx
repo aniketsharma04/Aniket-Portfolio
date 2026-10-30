@@ -23,7 +23,6 @@ const TIPS = {
   experience: "Where Aniket has worked 💼",
   projects: "Check out the projects 👀",
   blog: "Some things Aniket wrote ✍️",
-  testimonials: "What people say about working with Aniket 💬",
   contact: "Got an idea? Drop a message 📬",
   footer: "Thanks for stopping by 🧡",
 };

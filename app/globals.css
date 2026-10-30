@@ -1047,58 +1047,6 @@ a {
   height: 13px;
 }
 
-/* TESTIMONIALS */
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-.tc {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 22px;
-  transition: border-color 0.2s;
-}
-.tc:hover {
-  border-color: var(--border2);
-}
-.tc-hdr {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-}
-.tc-av {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--t2);
-  flex-shrink: 0;
-}
-.tc-n {
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--t1);
-}
-.tc-r {
-  font-size: 11.5px;
-  color: var(--t3);
-}
-.tc-txt {
-  font-size: 13px;
-  color: var(--t2);
-  line-height: 1.7;
-  font-style: italic;
-}
-
 /* BLOG */
 .blog-lbl {
   font-size: 11px;
@@ -1506,8 +1454,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .proj-grid,
-  .blog-grid,
-  .testi-grid {
+  .blog-grid {
     grid-template-columns: 1fr;
   }
   .tl::before {

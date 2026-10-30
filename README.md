@@ -32,7 +32,6 @@ aniket-portfolio/
 │   ├── Experience.jsx   # Alternating timeline layout
 │   ├── Projects.jsx     # 6-project grid
 │   ├── Blog.jsx         # 3 article cards
-│   ├── Testimonials.jsx # 2-column recommendation cards
 │   ├── Contact.jsx      # Contact form + details
 │   └── Footer.jsx       # Footer with newsletter + theme toggle
 └── data/
