@@ -158,7 +158,7 @@ export const personal = {
   links: {
     linkedin: "https://linkedin.com/in/aniket-sharma-07ba6617b/",
     github: "https://github.com/aniketsharma04",
-    portfolio: "https://portfolio-main-86tq.vercel.app/",
+    portfolio: "https://aniketsharma04.vercel.app/",
     codechef: "https://codechef.com/users/anikets_iiitn",
     gfg: "https://geeksforgeeks.org/user/aniketshaul0x/",
     instagram: "https://instagram.com/aniketsharma054",
@@ -456,7 +456,7 @@ export const projects = [
     tracks: ["swe"],
     image: "/projects/portfolio.png",
     desc: "A modern, high-performance personal portfolio built with Next.js 16 (App Router) and React 19. One shareable link with Data Scientist and Software Engineer views, content driven from data/index.js, responsive dark/light mode, and SEO-optimized architecture.",
-    link: "https://portfolio-main-86tq.vercel.app/",
+    link: "https://aniketsharma04.vercel.app/",
     linkLabel: "Live demo",
     linkType: "external",
   },
